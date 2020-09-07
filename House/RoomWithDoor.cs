@@ -11,7 +11,7 @@ namespace House
         public string DoorLocation { get; set; }
         public string DoorDescription { get; private set; }
         public RoomWithDoor(string doorLocation, string decoration, string doorDescription)
-            : base(decoration, description)
+            : base(decoration,doorLocation)
         {
             DoorDescription = doorDescription;
             DoorLocation = DoorLocation;

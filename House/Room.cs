@@ -10,7 +10,7 @@ namespace House
     {
         string decoration;
         public Room(string decoration, string name)
-                : base(description)
+                : base(name)
         {
             this.decoration = decoration;
         }

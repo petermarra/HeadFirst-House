@@ -15,15 +15,16 @@ namespace House
         {
             this.hot = hot;
         }
-        public override string Description {
+        public override string Description
+        {
             get
-            { 
+            {
                 string description = base.Description;
                 if (hot)
-                    description += "\n\rIt's very hot here.";            
+                    description += "\n\rIt's very hot here.";
                 return description;
             }
-        } 
+        }
 
         //public override string Description
         //{
@@ -32,6 +33,5 @@ namespace House
         //    return description;
 
     }
-    }
-
 }
+

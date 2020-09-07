@@ -11,8 +11,8 @@ namespace House
         public string DoorDescription { get; set; }
         public string DoorLocation { get;  private set; }
         
-        public OutsideWithDoor (string doorDescription, string doorlocation, bool hot, string description)
-            :base(hot,description)
+        public OutsideWithDoor (string doorlocation,string doorDescription, bool hot)
+            :base(hot,doorlocation)
         {
             DoorDescription = doorDescription;
             DoorLocation = doorlocation;
