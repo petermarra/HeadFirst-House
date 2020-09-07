@@ -15,6 +15,13 @@ namespace House
         public Form1()
         {
             InitializeComponent();
+            CreateObjects();
+        }
+
+        private void CreateObjects()
+        {
+           RoomWithDoor roomWithDoor= new RoomWithDoor("Living Room","an antique carpet","an oak door with a brass knob"
+           ;
         }
     }
 }

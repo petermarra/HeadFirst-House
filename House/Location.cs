@@ -14,6 +14,7 @@ namespace House
         }
         public Location[] Exits;
         public string Name { get; private set; }
+        
         public virtual string Description
         {
             get
@@ -26,6 +27,8 @@ namespace House
                     if (i != Exits.Length - 1)
                         description += ",";
                 }
+        
+                description += ".";
                 return description;
             }
         }

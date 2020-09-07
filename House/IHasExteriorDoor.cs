@@ -8,5 +8,7 @@ namespace House
 {
     interface IHasExteriorDoor
     {
+        public string DoorDescription { get; }
+        public string DoorLocation { get; }
     }
 }
