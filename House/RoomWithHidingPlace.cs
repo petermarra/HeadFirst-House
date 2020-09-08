@@ -10,7 +10,7 @@ namespace House
     {
         public string HidingPlace { get; private set; }
         public RoomWithHidingPlace(string name, string decoration, string hidingPlace )
-            :base(decoration,name)
+            :base(name,decoration)
         {
             this.HidingPlace = hidingPlace;
         }
