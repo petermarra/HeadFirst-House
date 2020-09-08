@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace House
 {
-    class RoomWithDoor : Room, IHasExteriorDoor
+    class RoomWithDoor : RoomWithHidingPlace, IHasExteriorDoor
     {
         public string DoorDescription { get; private set; }
         public Location DoorLocation { get; set; }
 
-        public RoomWithDoor(string name, string decoration, string doorDescription)
-            : base(decoration,name)
+        public RoomWithDoor( string name, string decoration, string hidingPlace, string doorDescription)
+            : base(name,decoration,  hidingPlace)
         {
             DoorDescription = doorDescription;
         }

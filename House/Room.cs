@@ -9,7 +9,7 @@ namespace House
     class Room:Location
     {
         string decoration;
-        public Room(string decoration, string name)
+        public Room(string name, string decoration )
                 : base(name)
         {
             this.decoration = decoration;

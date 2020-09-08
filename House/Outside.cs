@@ -10,7 +10,7 @@ namespace House
     {
         bool hot;
 
-        public Outside(bool hot, string name)
+        public Outside(string name, bool hot)
             : base(name)
         {
             this.hot = hot;

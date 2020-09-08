@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace House
 {
-    class OutsideWithDoor : Outside, IHasExteriorDoor
+    class OutsideWithDoor : OutsideWithHidingPlace, IHasExteriorDoor
     {
         public string DoorDescription { get; private set; }
         public Location DoorLocation { get; set; }
@@ -18,8 +18,8 @@ namespace House
                 return $"{base.Description}  \r\nYou see {DoorDescription}.";
             }
         }
-        public OutsideWithDoor (string name,string doorDescription, bool hot)
-            :base(hot,name)
+        public OutsideWithDoor (string name, bool hot, string hidingPlace, string doorDescription)
+            :base( name,hot,hidingPlace )
         {
             DoorDescription = doorDescription;
         }
