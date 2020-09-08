@@ -18,7 +18,7 @@ namespace House
         { get
             {
                 string description = base.Description;
-                description += $"\n\rYou see {decoration}.";
+                description += $"\r\nYou see {decoration}.";
                 return description;
             } 
         }

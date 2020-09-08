@@ -8,14 +8,20 @@ namespace House
 {
     class OutsideWithDoor : Outside, IHasExteriorDoor
     {
-        public string DoorDescription { get; set; }
-        public string DoorLocation { get;  private set; }
-        
-        public OutsideWithDoor (string doorlocation,string doorDescription, bool hot)
-            :base(hot,doorlocation)
+        public string DoorDescription { get; private set; }
+        public Location DoorLocation { get; set; }
+
+        public override string Description
+        {
+            get
+            {
+                return $"{base.Description}  \r\nYou see {DoorDescription}.";
+            }
+        }
+        public OutsideWithDoor (string name,string doorDescription, bool hot)
+            :base(hot,name)
         {
             DoorDescription = doorDescription;
-            DoorLocation = doorlocation;
         }
     }
 }

@@ -19,7 +19,7 @@ namespace House
         {
             get
             {
-                string description = $"You're standing in the {Name}. " +
+                string description = $"You're standing in the {Name}.\r\n" +
                     $"You see exits  to the following places: ";
                 for (int i = 0; i < Exits.Length; i++)
                 {

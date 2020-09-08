@@ -36,9 +36,11 @@
             // 
             // description
             // 
+            this.description.Enabled = false;
             this.description.Location = new System.Drawing.Point(11, 12);
             this.description.Multiline = true;
             this.description.Name = "description";
+            this.description.ReadOnly = true;
             this.description.Size = new System.Drawing.Size(337, 166);
             this.description.TabIndex = 0;
             // 
@@ -59,6 +61,7 @@
             this.goHere.TabIndex = 2;
             this.goHere.Text = "Go here";
             this.goHere.UseVisualStyleBackColor = true;
+            this.goHere.Click += new System.EventHandler(this.goHere_Click);
             // 
             // goThroughTheDoor
             // 
@@ -68,6 +71,7 @@
             this.goThroughTheDoor.TabIndex = 3;
             this.goThroughTheDoor.Text = "Go through the door";
             this.goThroughTheDoor.UseVisualStyleBackColor = true;
+            this.goThroughTheDoor.Click += new System.EventHandler(this.goThroughTheDoor_Click);
             // 
             // Form1
             // 

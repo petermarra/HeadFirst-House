@@ -21,16 +21,11 @@ namespace House
             {
                 string description = base.Description;
                 if (hot)
-                    description += "\n\rIt's very hot here.";
+                    description += "\r\nIt's very hot here.";
                 return description;
             }
         }
 
-        //public override string Description
-        //{
-        //    string description = base.Description;
-        //    description += "\n\rIt's very hot here.";
-        //    return description;
 
     }
 }
