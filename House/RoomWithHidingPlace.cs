@@ -14,5 +14,13 @@ namespace House
         {
             this.HidingPlace = hidingPlace;
         }
+
+        public override string Description
+        {
+            get
+            {
+                return $"{base.Description} \r\nSomeone could hide {HidingPlace}";
+            }
+        }
     }
 }
